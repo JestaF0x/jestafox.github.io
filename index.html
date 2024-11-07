@@ -10,16 +10,18 @@
     </head>
     <body bgcolor="#242424"">
         <div class="main" id="main">
-            <img class="jesta" id="jestaclick" src="jestabored.gif" alt="II55 mascot is waiting for something.." width="18%" onmouseover="this.src='jestasurprised.png'" onmouseout="this.src='jestabored.gif'" onclick="this.src='jestaclicked.png'">
+            <img class="jesta" id="jestaclick" src="jestabored.gif" alt="II55 mascot is waiting for something.." width="18%" onmouseover="this.src='jestasurprised.png'">
             <script>
+                
                 var clicked = 0;
                 var button = document.getElementById("jesta-clicker")
                 jestaclick.onclick = function() {
+                    this.src='jestaclicked.png'
                     clicked++
                     if(clicked == 10)
                         {
                             alert('STOP CLICKING ON ME, LEAVE ME ALREADY')
-                            jestaclick.src = 'angryjesta.png'          
+                            this.src = 'angryjesta.png'          
                         }
                 }
             </script>
