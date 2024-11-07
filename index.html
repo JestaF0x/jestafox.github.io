@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>IllegalInstruction55</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="jesta.png" type="image/x-icon">
+    </head>
+    <body bgcolor="#242424"">
+        <div class="main" id="main">
+            <img class="jesta" id="jestaclick" src="jestabored.gif" alt="II55 mascot is waiting for something.." width="18%" onmouseover="this.src='jestasurprised.png'" onmouseout="this.src='jestabored.gif'" onclick="this.src='jestaclicked.png'">
+            <script>
+                var clicked = 0;
+                var button = document.getElementById("jesta-clicker")
+                jestaclick.onclick = function() {
+                    clicked++
+                    if(clicked == 10)
+                        {
+                            alert('STOP CLICKING ON ME, LEAVE ME ALREADY')
+                            jestaclick.src = 'angryjesta.png'          
+                        }
+                }
+            </script>
+        </div>
+        <footer class="main">
+            Under construction...
+        </footer>
+    </body>
+</html>

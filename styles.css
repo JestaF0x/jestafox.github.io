@@ -1,0 +1,10 @@
+.main{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-weight:bolder;
+    font-size: 18px;
+}
+.jesta{
+    filter: drop-shadow(0 0 10px orange);
+}
